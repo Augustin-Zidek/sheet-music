@@ -7,6 +7,10 @@
 
 \layout {
   indent = 0\cm
+  \context {
+    \Score
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+  }
 }
 
 fourMajorChords = {\chordmode {c4 f4 g4 c4}}
@@ -29,7 +33,6 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' a' {\fourMajorChords}
     \transpose c' bes' {\fourMajorChords}
     \transpose c' b' {\fourMajorChords}
-    \transpose c' c'' {\fourMajorChords}
   }
   {
   \accidentalStyle forget
@@ -45,7 +48,6 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' a'' {\fourMajorChordsNotes}
     \transpose c' bes'' {\fourMajorChordsNotes}
     \transpose c' b'' {\fourMajorChordsNotes}
-    \transpose c' c''' {\fourMajorChordsNotes}
   }
   >>
   \midi {}
@@ -67,7 +69,6 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' a' {\fourMinorChords}
     \transpose c' bes' {\fourMinorChords}
     \transpose c' b' {\fourMinorChords}
-    \transpose c' c'' {\fourMinorChords}
   }
   {
     \accidentalStyle forget
@@ -83,7 +84,6 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' a'' {\fourMinorChordsNotes}
     \transpose c' bes'' {\fourMinorChordsNotes}
     \transpose c' b'' {\fourMinorChordsNotes}
-    \transpose c' c''' {\fourMinorChordsNotes}
   }
   >>
   \midi {}
