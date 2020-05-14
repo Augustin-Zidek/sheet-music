@@ -3,6 +3,12 @@
   composer = "Augustin Žídek"
 }
 
+#(set-global-staff-size 23)
+
+\layout {
+  indent = 0\cm
+}
+
 fourMajorChords = {\chordmode {c4 f4 g4 c4}}
 fourMajorChordsNotes = {<c e g> <c f a> <b, d g> <c e g>} 
 fourMinorChords = {\chordmode {c4:m f4:m g4:m c4:m}}
@@ -26,6 +32,7 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' c'' {\fourMajorChords}
   }
   {
+  \accidentalStyle forget
     \transpose c' c'' {\fourMajorChordsNotes} 
     \transpose c' cis'' {\fourMajorChordsNotes}
     \transpose c' d'' {\fourMajorChordsNotes}
@@ -63,6 +70,7 @@ fourMinorChordsNotes = {<c es g> <c f as> <bes, d g> <c es g>}
     \transpose c' c'' {\fourMinorChords}
   }
   {
+    \accidentalStyle forget
     \transpose c' c'' {\fourMinorChordsNotes} 
     \transpose c' cis'' {\fourMinorChordsNotes}
     \transpose c' d'' {\fourMinorChordsNotes}
